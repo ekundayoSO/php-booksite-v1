@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: coral;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+
+.container {
+  width: 100%;
+  background-color: rgb(220, 231, 235);
+  border-radius: 10px;
+  position: relative;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+th {
+  background-color: rgb(169, 166, 166);
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr {
+  border-spacing: 2px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#edit {
+  font-size: 18px;
+  text-decoration: none;
+  background-color: coral;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+#edit:hover {
+  background-color: rgb(4, 102, 4);
+  transition: 1s ease-out;
+}
+
+#delete {
+  font-size: 18px;
+  text-decoration: none;
+  background-color: coral;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+#delete:hover {
+  background-color: rgb(210, 35, 35);
+  transition: 1s ease-out;
+}
+
+.btn-danger {
+  margin-top: 5px;
+}
+
+.btn-danger:hover {
+  margin-top: 5px;
+  background-color: rgb(210, 35, 35);
+  transition: 1s ease-out;
+}
+
+.delete-p {
+  width: 80%;
+  text-align: left;
+  line-height: 1.5rem;
+  margin-top: 20px;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+    color: #000;
+    animation-delay: 1s;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    color: rgb(216, 65, 65);
+  }
+}
+
+.animation {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: forwards;
+  animation-timing-function: ease;
+}
+
+form {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  text-align: left;
+  width: 500px;
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid rgb(185, 183, 183);
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 120px;
+  padding: 8px;
+  margin-bottom: 80px;
+  border-radius: 5px;
+  border: none;
+  background-color: coral;
+  color: #fff;
+  cursor: pointer;
+}
+
+#createbook {
+  position: absolute;
+  top: 60;
+  right: 20;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(220, 231, 235);
+  color: #000;
+  cursor: pointer;
+}
+
+#createbook:hover {
+  background-color: rgb(4, 102, 4);
+  color: #fff;
+  transition: 1s ease-out;
+}
+
+.footer-read {
+  width: 100%;
+  background-color: coral;
+  color: #fff;
+  bottom: 0;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer-create-delete {
+  width: 100%;
+  background-color: coral;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
