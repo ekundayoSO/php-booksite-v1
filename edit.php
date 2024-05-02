@@ -24,7 +24,7 @@ if (isset($_POST['update_book'])) {
     $genre = $_POST["genre"];
     $description = $_POST["description"];
 
-    $stmt = $connection->prepare("UPDATE books SET title=?, description=?, author=?, publishing_year=?, genre=? WHERE id=?");
+    $stmt = $connection->prepare("UPDATE books SET title=?, author=?, publishing_year=?, genre=?, description=? WHERE id=?");
     $stmt->bind_param("sssisi", $title, $description, $author, $publishing_year, $genre, $id_new);
 
     $title = $_POST["title"];
@@ -48,12 +48,14 @@ mysqli_close($connection);
 <?php include 'header.php'; ?>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="book.css">
     <title>Document</title>
 </head>
+
 <body>
     <form action="edit.php?id_new=<?php echo $id ?>" method="post">
         <label>
@@ -66,7 +68,7 @@ mysqli_close($connection);
         <input type="submit" name="update_book" value="UPDATE">
     </form>
     <footer class="footer-create-delete">
-        <p><small>Copyright&COPY;Booksite 2024</small></p>
+        <p><small>Copyright&copy; booksite 2024</small></p>
     </footer>
 </body>
 

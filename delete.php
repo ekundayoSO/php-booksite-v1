@@ -42,11 +42,13 @@ mysqli_close($connection);
 <?php include 'header.php'; ?>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form action="delete.php?id=<?php echo $id ?>" method="post" id="deleteForm">
         <h2 class="animation">Welcome to bin section!</h2>
@@ -61,7 +63,7 @@ mysqli_close($connection);
         </div>
     </form>
     <footer class="footer-create-delete">
-        <p><small>Copyright&COPY;Booksite 2024</small></p>
+        <p><small>Copyright&copy; booksite 2024</small></p>
     </footer>
     <script src="delete.js"></script>
 </body>
